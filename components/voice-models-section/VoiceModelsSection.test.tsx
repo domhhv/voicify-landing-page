@@ -3,7 +3,7 @@ import { test, expect } from 'vitest';
 
 import VoiceModelsSection from './VoiceModelsSection';
 
-test('VoiceModelsSection', () => {
+test('renders VoiceModelsSection', () => {
   const data = [
     {
       id: 1,
@@ -30,4 +30,24 @@ test('VoiceModelsSection', () => {
   const thumbnail = getByRole('voice-thumbnail') as HTMLImageElement;
   const uri = `/_next/image?url=${encodeURIComponent('https://example.com/avatar.png')}&w=256&q=75`;
   expect(thumbnail.src).toContain(uri);
+});
+
+test('does not render title when not provided', () => {
+  const data = [
+    {
+      id: 1,
+      name: 'Test name',
+      usesCount: 1,
+      likesCount: 1,
+      thumbnailUrl: 'test-url',
+    },
+  ];
+  const { queryByText } = render(
+    <VoiceModelsSection
+      data={data}
+      iconPath="https://example.com/avatar.png"
+      iconAlt=""
+    />
+  );
+  expect(queryByText('Test title')).toBeNull();
 });

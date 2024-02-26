@@ -210,7 +210,7 @@ a {
 }
 
 .voice-model-card {
-  min-width: 200px;
+  flex-basis: 200px;
   @media (min-width: 768px) {
     width: calc(100% - 2rem);
   }
@@ -221,6 +221,7 @@ a {
   background-size: cover;
   width: 100%;
   height: 240px;
-  border-radius: 8px;
+  border-top-right-radius: 24px;
+  border-top-left-radius: 24px;
   background-position: center;
 }
