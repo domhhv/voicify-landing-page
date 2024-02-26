@@ -23,7 +23,7 @@ const AppLink = ({
   const Icon = link.icon;
 
   return (
-    <div className={className}>
+    <div data-testid="link-container" className={className}>
       <Icon color={isCurrent ? activeLinkColor : inactiveLinkColor} />
       <Link href={link.to}>{link.title}</Link>
     </div>

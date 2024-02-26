@@ -1,4 +1,4 @@
-import { AppHeader } from '../components';
+import { AppFooter, AppHeader } from '../components';
 import '../styles/globals.css';
 
 export default function RootLayout({
@@ -11,6 +11,7 @@ export default function RootLayout({
       <body>
         <AppHeader />
         {children}
+        <AppFooter />
       </body>
     </html>
   );
