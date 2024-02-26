@@ -2,6 +2,7 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 
 import { AppBanner } from '../../components';
+import { VoiceCategoryChipsList } from '../../components';
 import styles from '../../styles/Home.module.css';
 
 const Home: NextPage = () => {
@@ -18,6 +19,7 @@ const Home: NextPage = () => {
 
       <main>
         <AppBanner />
+        <VoiceCategoryChipsList />
       </main>
     </div>
   );
