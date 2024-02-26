@@ -13,6 +13,7 @@ const useScreenSize = () => {
 
   useEffect(() => {
     const handleResize = (event: UIEvent) => {
+      console.log('resize fired');
       setScreenSize((event.target as typeof window)?.innerWidth);
     };
 
