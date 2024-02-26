@@ -1,10 +1,11 @@
-import { expect, test } from "vitest";
-import { render, screen } from "@testing-library/react";
-import Page from "./page";
+import { render, screen } from '@testing-library/react';
+import { expect, test } from 'vitest';
 
-test("App Router: Works with Server Components", () => {
+import Page from './page';
+
+test('App Router: Works with Server Components', () => {
   render(<Page />);
   expect(
-    screen.getByRole("heading", { level: 1, name: "App Router" }),
+    screen.getByRole('heading', { level: 1, name: 'App Router' })
   ).toBeDefined();
 });
