@@ -29,7 +29,5 @@ test('VoiceModelsSection', () => {
 
   const thumbnail = getByRole('voice-thumbnail') as HTMLImageElement;
   const uri = `/_next/image?url=${encodeURIComponent('https://example.com/avatar.png')}&w=256&q=75`;
-  console.log('uri1: ', uri);
-  console.log('uri2: ', thumbnail.src);
   expect(thumbnail.src).toContain(uri);
 });

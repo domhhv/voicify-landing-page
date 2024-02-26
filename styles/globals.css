@@ -123,9 +123,9 @@ a {
 
 .category-title {
   font-feature-settings:
-      'ss03' on,
-      'ss06' on,
-      'ss01' on;
+    'ss03' on,
+    'ss06' on,
+    'ss01' on;
   font-size: 56px;
   font-style: normal;
   font-weight: 900;
@@ -153,9 +153,9 @@ a {
 
 .category-count {
   font-feature-settings:
-      'ss03' on,
-      'ss06' on,
-      'ss01' on;
+    'ss03' on,
+    'ss06' on,
+    'ss01' on;
   font-size: 56px;
   font-style: normal;
   font-weight: 900;
@@ -178,10 +178,10 @@ a {
 
 .voice-model-name {
   font-feature-settings:
-      'ss03' on,
-      'ss06' on,
-      'ss01' on,
-      'salt' on;
+    'ss03' on,
+    'ss06' on,
+    'ss01' on,
+    'salt' on;
   font-size: 15px;
   font-style: normal;
   font-weight: 650;
@@ -194,10 +194,10 @@ a {
 
 .voice-model-details {
   font-feature-settings:
-      'ss03' on,
-      'ss06' on,
-      'ss01' on,
-      'salt' on;
+    'ss03' on,
+    'ss06' on,
+    'ss01' on,
+    'salt' on;
   font-size: 15px;
   font-style: normal;
   font-weight: 500;

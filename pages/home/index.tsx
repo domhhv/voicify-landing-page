@@ -1,12 +1,7 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import Image from 'next/image';
 
-import {
-  AppBanner,
-  VoiceModelCard,
-  VoiceModelsSection,
-} from '../../components';
+import { AppBanner, VoiceModelsSection } from '../../components';
 import { VoiceCategoryChipsList } from '../../components';
 import styles from '../../styles/Home.module.css';
 
