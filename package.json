@@ -22,6 +22,7 @@
     "@testing-library/react": "14.1.2",
     "@types/node": "20.10.4",
     "@types/react": "18.2.45",
+    "@types/react-dom": "^18.2.19",
     "@typescript-eslint/eslint-plugin": "^7.0.2",
     "@typescript-eslint/parser": "^7.0.2",
     "@vitejs/plugin-react": "^4.2.1",
