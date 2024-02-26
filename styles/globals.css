@@ -8,6 +8,7 @@ body {
   margin: 0;
   font-family:
     -apple-system,
+    Rubik,
     BlinkMacSystemFont,
     Segoe UI,
     Roboto,
@@ -31,4 +32,84 @@ a {
 
 .inactive-link {
   color: #808080;
+}
+
+.banner-image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 400px;
+  background-position: center;
+  border-radius: 24px;
+
+  @media (min-width: 768px) {
+    background-image: url(./../public/hero-banner.png);
+  }
+
+  @media (max-width: 768px) {
+    height: 150px;
+  }
+}
+
+.banner-text-container {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+}
+
+.hero-banner-heading {
+  color: white;
+  font-feature-settings:
+      'ss03' on,
+      'ss06' on,
+      'ss01' on;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 80px;
+  letter-spacing: -1.6px;
+  text-align: left;
+  @media (max-width: 1250px) {
+    font-size: 30px;
+    line-height: 40px;
+    letter-spacing: -0.8px;
+  }
+
+  @media (max-width: 768px) {
+    background-image: url(./../public/hero-banner.png);
+    color: transparent;
+    background-clip: text;
+  }
+
+  @media (min-width: 769px) {
+    text-align: center;
+  }
+}
+
+.hero-banner-subheading {
+  color: white;
+  text-align: center;
+  font-variant-numeric: lining-nums tabular-nums;
+  font-feature-settings:
+      'ss03' on,
+      'ss06' on,
+      'ss01' on,
+      'salt' on;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 650;
+  line-height: 32px;
+
+  @media (max-width: 1250px) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.banner-social-views-chip {
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -60px;
 }
