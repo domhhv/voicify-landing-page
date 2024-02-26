@@ -19,9 +19,6 @@ const AppLink = ({
   const pathname = usePathname();
 
   const isCurrent = pathname === link.to;
-  console.log('pathname', pathname);
-  console.log('link.to', link.to);
-  console.log('isCurrent', isCurrent);
   const className = `flex items-center space-x-2 font-bold ${isCurrent ? '' : 'inactive-link'}`;
   const Icon = link.icon;
 
