@@ -12,6 +12,13 @@
     "prettier:check": "prettier --check .",
     "prettier:write": "prettier --write ."
   },
+  "lint-staged": {
+    "**/*.{ts,tsx}": [
+      "typecheck",
+      "eslint",
+      "prettier --check"
+    ]
+  },
   "dependencies": {
     "autoprefixer": "^10.4.17",
     "clsx": "^2.1.0",
