@@ -1,7 +1,7 @@
 import Home from '../pages/home';
 
 export const metadata = {
-  title: 'App Router',
+  title: 'Home | Voicify',
 };
 
 export default function Page() {

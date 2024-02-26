@@ -50,8 +50,9 @@ const VoiceCategoryChipsList = () => {
     'flex',
     'flex-wrap',
     'py-20',
-    'space-x-4',
     'space-y-4',
+    'gap-0',
+    'md:gap-4',
     'justify-center',
     'items-baseline'
   );
