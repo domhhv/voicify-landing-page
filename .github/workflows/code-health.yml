@@ -64,20 +64,21 @@ jobs: # list of things to do
 
       - name: Code Formatting
         run: yarn prettier:check
-#  testing:
-#    name: Testing # job name (unique id)
-#    runs-on: ubuntu-latest # on which machine to run
-#    steps: # list of steps
-#      - name: Install NodeJS
-#        uses: actions/setup-node@v2
-#        with:
-#          node-version: ${{ env.NODE_VERSION }}
-#
-#      - name: Code Checkout
-#        uses: actions/checkout@v2
-#
-#      - name: Install Dependencies
-#        run: yarn install
-#
-#      - name: Unit Tests
-#        run: yarn test
+
+  testing:
+    name: Testing # job name (unique id)
+    runs-on: ubuntu-latest # on which machine to run
+    steps: # list of steps
+      - name: Install NodeJS
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+
+      - name: Code Checkout
+        uses: actions/checkout@v2
+
+      - name: Install Dependencies
+        run: yarn install
+
+      - name: Unit Tests
+        run: yarn test
