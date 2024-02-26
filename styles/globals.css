@@ -62,9 +62,9 @@ a {
 .hero-banner-heading {
   color: white;
   font-feature-settings:
-      'ss03' on,
-      'ss06' on,
-      'ss01' on;
+    'ss03' on,
+    'ss06' on,
+    'ss01' on;
   font-size: 60px;
   font-style: normal;
   font-weight: 900;
@@ -93,10 +93,10 @@ a {
   text-align: center;
   font-variant-numeric: lining-nums tabular-nums;
   font-feature-settings:
-      'ss03' on,
-      'ss06' on,
-      'ss01' on,
-      'salt' on;
+    'ss03' on,
+    'ss06' on,
+    'ss01' on,
+    'salt' on;
   font-size: 20px;
   font-style: normal;
   font-weight: 650;
